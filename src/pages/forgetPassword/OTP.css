@@ -1,0 +1,19 @@
+.otp-field {
+    width: 48px;
+    height: 48px;
+    margin: 0px 2.2px;
+    font-size:xX-large;
+    text-align: center;
+    border-radius: 10px;
+    border:1px solid #c12179;
+    color: #c12179;
+    
+}
+
+.otp-field:hover{
+    border: 1px solid #c12179;
+}
+.otp_Input{
+    display: flex;
+    margin: 5px 0px;
+}

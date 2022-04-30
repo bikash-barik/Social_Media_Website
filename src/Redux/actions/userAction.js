@@ -94,7 +94,7 @@ import OTPVerify from '../../components/OTP/OTPVerify'
       }
   
       const { data } = await axios.post(
-        'http://localhost:8800/api/auth/login',
+        'http://43.204.65.150/dev/api/v1/user/login',
         { email, password },
         config
       )
@@ -131,7 +131,7 @@ export const otpVerify = (email, otp) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://localhost:8800/api/auth/verify',
+      'http://43.204.65.150/api/auth/verify',
       { email, otp },
       config
     )
@@ -170,7 +170,7 @@ export const resendOTP = (email) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://localhost:8800/api/auth/resendOtp',
+      'http://43.204.65.150/api/auth/resendOtp',
       {email},
       config
     )
@@ -209,7 +209,7 @@ export const forgetPassword = (email) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://localhost:8800/api/auth/forgot-password',
+      'http://43.204.65.150/api/auth/forgot-password',
       {email},
       config
     )
@@ -247,7 +247,7 @@ export const resetpassword = (email, code, password) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://localhost:8800/api/auth/reset-password',
+      'http://43.204.65.150/api/auth/reset-password',
       { email, code, password},
       config
     )
@@ -285,7 +285,7 @@ export const resendforgotPassword = (email) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://localhost:8800/api/auth/resendpasswordCode',
+      'http://43.204.65.150/api/auth/resendpasswordCode',
       {email},
       config
     )
@@ -332,7 +332,7 @@ export const resendforgotPassword = (email) => async (dispatch) => {
       }
   
       const { data } = await axios.post(
-        'http://localhost:8800/api/auth/signup',
+        'http://43.204.65.150/dev/api/v1/user/register',
         { firstName, lastName, email, password},
         config
       )

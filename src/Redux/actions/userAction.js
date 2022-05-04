@@ -131,8 +131,8 @@ export const otpVerify = (email, otp) => async (dispatch) => {
     }
 
     const { data } = await axios.post(
-      'http://43.204.65.150/api/auth/verify',
-      { email, otp },
+      'http://43.204.65.150/dev/api/v1/user/verifyOTP',
+      { email, otp, newPassword },
       config
     )
 
